@@ -1,0 +1,123 @@
+:root {
+  --color-red: #9e1d27;
+}
+
+@font-face {
+  font-family: "Alethiaproregular";
+  src: url("./fonts/Alethiaproregular.ttf");
+}
+
+@font-face {
+  font-family: "AlethiaProMedium";
+  src: url("./fonts/MintType-AlethiaProMedium.otf");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("./fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Medium";
+  src: url("./fonts/OpenSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("./fonts/OpenSans-Regular.ttf");
+}
+
+.lp-body {
+  font-family: "OpenSans-Regular";
+  margin: 0;
+}
+
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+.lp-logo {
+  width: 25%;
+  margin: auto;
+  display: block;
+  margin-top: 40px;
+}
+
+.lp-hero h1 {
+  color: var(--color-red);
+  text-transform: uppercase;
+  font-family: "AlethiaProMedium";
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 6px;
+  margin-top: 25px;
+}
+
+.lp-hero p {
+  text-align: center;
+  line-height: 1.2;
+  width: 70%;
+  margin: auto;
+  font-size: 14px;
+  font-family: "Alethiaproregular";
+}
+
+.hero-banner {
+  margin-top: 20px;
+}
+
+.lp-hero ul li {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  justify-content: center;
+  column-gap: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: "Alethiaproregular";
+  font-weight: 200;
+}
+
+.lp-h3 {
+  text-align: center;
+  font-size: 26px;
+  font-family: "AlethiaProMedium";
+  font-weight: 500;
+  width: 70%;
+  margin: 30px auto;
+  text-transform: uppercase;
+}
+
+.lp-hero-bullets {
+  width: 70%;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 2300px) {
+}
