@@ -170,7 +170,7 @@ img {
   font-size: 13px;
 }
 
-.lp-changes p:last-child {
+.lp-changes-last-p {
   color: var(--color-red);
   font-size: 11px;
   font-style: italic;
@@ -179,11 +179,14 @@ img {
   margin-top: 25px;
 }
 .lp-labels img {
-  width: 100px;
+  width: 80px;
   display: block;
   margin: auto;
 }
-
+.lp-labels {
+  width: 80%;
+  margin: auto;
+}
 .lp-labels div:first-child img:nth-child(1) {
   display: block;
   margin: auto;
@@ -225,7 +228,7 @@ img {
   margin-bottom: 25px;
 }
 
-.lp-cta{
+.lp-cta {
   margin: auto;
   display: block;
   text-align: center;
@@ -239,8 +242,240 @@ img {
   text-transform: uppercase;
   font-size: 18px;
   font-family: "Alethiaproregular";
-
 }
+
+/* lp-why-text */
+
+.lp-why-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.lp-why-text div {
+  width: 100%;
+  height: 100%;
+}
+
+.lp-why-text img {
+  width: 60px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.lp-why-text p {
+  font-size: 12px;
+
+  width: 74%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.lp-why-text div:first-child {
+  border-bottom: 1px solid #b9b9b9;
+  border-right: 1px solid #b9b9b9;
+}
+
+.lp-why-text div:last-child {
+  border-left: 1px solid #b9b9b9;
+  border-top: 1px solid #b9b9b9;
+}
+
+.lp-why-text div:nth-child(3) img,
+.lp-why-text div:nth-child(4) img {
+  padding-top: 15px;
+}
+
+.lp-denkova h3 {
+  font-weight: 400;
+  margin-top: 70px;
+}
+
+.lp-denkova img {
+  width: 70%;
+  display: block;
+  margin: auto;
+  transform: scale(-1, 1);
+}
+
+.lp-denkova-text {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Alethiaproregular";
+}
+/* lp-last-banner */
+.lp-last-banner {
+  margin-top: 50px;
+  font-family: "Alethiaproregular";
+}
+.lp-last-cta {
+  background-color: var(--color-red);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.lp-last-cta img {
+  width: 35%;
+  margin-top: -40px;
+}
+.lp-last-cta p {
+  color: white;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+.lp-last-cta .cta {
+  background-color: white;
+  color: black;
+  padding: 3px 7px;
+  max-width: max-content;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  margin: auto;
+  font-size: 18px;
+}
+
+.lp-last-div {
+  position: relative;
+}
+
+.lp-last-div p {
+  position: absolute;
+  top: 45%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  width: 45%;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+}
+
+/* lp-table */
+
+.lp-table-div {
+  position: relative;
+}
+.lp-table-div div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lp-table-div div p {
+  font-size: 11px;
+  text-align: center;
+}
+.lp-table-div div p:nth-child(2) {
+  background-color: var(--color-red);
+  color: white;
+  width: max-content;
+  padding: 4px 15px;
+  border-radius: 15px;
+  margin: auto;
+  margin-right: -10px;
+  margin-top: 20px;
+}
+.lp-table-div div p:nth-child(3) {
+  margin: auto;
+  margin-bottom: 25px;
+  background-color: var(--color-red);
+  color: white;
+  width: max-content;
+  padding: 4px 15px;
+  border-radius: 15px;
+}
+
+.lp-table-bul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+  font-size: 12px;
+}
+.lp-table-bul div:nth-child(3) hr {
+  width: 40%;
+  border-radius: 15px;
+  border-top: var(--color-red) 5px solid;
+}
+
+.lp-table-bul div:nth-child(5) hr {
+  width: 40%;
+  border-radius: 15px;
+  border-top: #1a963a 5px solid;
+}
+.lp-table-bul div p {
+  font-size: 13px;
+  margin-top: 0;
+}
+
+.lp-changes-div-hr {
+  display: flex;
+  flex-direction: row;
+}
+
+.lp-red-shape {
+  width: 16px;
+  height: 40px;
+  border-radius: 30px;
+  position: relative;
+  margin: auto;
+  margin-right: 0;
+  border: 1px solid #2e2e2e;
+}
+.lp-background-red {
+  background-color: var(--color-red);
+  border: 1px solid var(--color-red);
+}
+.lp-changes-div {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  column-gap: 10px;
+  margin-top: 15px;
+}
+.lp-changes-div p {
+  margin: 0;
+  font-size: 12px;
+  font-family: "Alethiaproregular";
+  width: 80%;
+}
+.lp-changes-div p span {
+  display: block;
+  color: var(--color-red);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.lp-line {
+  width: 1px;
+  background-color: #2e2e2e;
+  height: 30px;
+  margin: auto;
+  margin-right: 8px;
+}
+
+
+
+
 
 
 
