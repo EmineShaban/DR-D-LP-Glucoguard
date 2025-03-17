@@ -94,6 +94,7 @@ img {
   width: 70%;
   margin: 30px auto;
   text-transform: uppercase;
+  margin-top: 50px;
 }
 .lp-h3 span {
   color: var(--color-red);
@@ -102,7 +103,10 @@ img {
   width: 70%;
   margin: auto;
 }
-
+.lp-hero ul li p {
+  text-align: left;
+  margin: 0;
+}
 .lp-ingredients-p {
   text-align: center;
   font-size: 14px;
@@ -156,6 +160,7 @@ img {
   grid-template-columns: 0.7fr 1fr;
   align-items: center;
   justify-content: center;
+  margin-top: -30px;
 }
 .lp-body-section div ul {
   padding: 0;
@@ -215,7 +220,7 @@ img {
   margin-bottom: 80px;
 }
 
-.lp-additional-component div {
+.lp-additional-component-div {
   margin: auto;
   margin-top: -47%;
   margin-left: 60px;
@@ -223,14 +228,18 @@ img {
   font-size: 14px;
 }
 
-.lp-additional-component div p {
+.lp-additional-component-div p {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
-
-.lp-cta {
+.lp-cta-div {
   margin: auto;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.lp-cta {
   text-align: center;
   background-color: var(--color-red);
   color: white;
@@ -238,7 +247,7 @@ img {
   max-width: max-content;
   text-decoration: none;
   border-radius: 25px;
-  margin-top: 40px;
+  margin-top: 20px;
   text-transform: uppercase;
   font-size: 18px;
   font-family: "Alethiaproregular";
@@ -444,7 +453,28 @@ img {
 .lp-background-red {
   background-color: var(--color-red);
   border: 1px solid var(--color-red);
+
+  animation: dropdown 1s linear;
 }
+
+@keyframes dropdown {
+  0% {
+    background-color: rgb(255, 255, 255);
+  }
+  25% {
+    background-color: hsla(355, 69%, 37%, 0.25);
+  }
+  50% {
+    background-color: hsla(355, 69%, 37%, 0.5);
+  }
+  75% {
+    background-color: hsla(355, 69%, 37%, 0.75);
+  }
+  100% {
+    background-color: var(--color-red);
+  }
+}
+
 .lp-changes-div {
   display: grid;
   grid-template-columns: 0.2fr 1fr;
@@ -453,26 +483,219 @@ img {
 }
 .lp-changes-div p {
   margin: 0;
-  font-size: 12px;
-  font-family: "Alethiaproregular";
+  font-size: 13px;
   width: 80%;
 }
 .lp-changes-div p span {
+  font-family: "Alethiaproregular";
+
   display: block;
   color: var(--color-red);
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   margin: 10px 0;
 }
 .lp-line {
-  width: 1px;
-  background-color: #2e2e2e;
-  height: 30px;
+  width: 2px;
+  background-color: #b2b2b2;
+  height: 50px;
   margin: auto;
   margin-right: 8px;
 }
 
+@media screen and (min-width: 425px) {
+  .lp-additional-component-div p {
+    margin: 0;
+    margin-bottom: 42px;
+  }
+
+  .lp-labels img {
+    width: 90px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .lp-ingredients ul li p {
+    margin: 0;
+    font-size: 15px;
+  }
+  .lp-ingredients ul li p span {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 17px;
+  }
+  .lp-ingredients ul li {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  .lp-ingredients-title {
+    font-size: 20px;
+  }
+  .lp-ingredients ul li.lp-ingredients-right {
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    margin-left: 10px;
+  }
+  .lp-body-section div {
+    display: grid;
+    grid-template-columns: 0.35fr 1fr;
+  }
+
+  .lp-body-section div ul li {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .lp-table-div div p:nth-child(2) {
+    background-color: var(--color-red);
+    color: white;
+    width: max-content;
+    padding: 4px 15px;
+    border-radius: 15px;
+    margin: auto;
+    margin-right: -10px;
+    margin-top: 38px;
+    font-size: 14px;
+  }
+
+  .lp-table-div div p:nth-child(3) {
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: var(--color-red);
+    color: white;
+    width: max-content;
+    padding: 4px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+
+  .lp-table-bul div p {
+    font-size: 15px;
+    margin-top: 0;
+  }
+  .lp-changes-div p {
+    margin: 0;
+    font-size: 14px;
+    width: 80%;
+  }
+  .lp-changes-div p span {
+    font-family: "Alethiaproregular";
+    display: block;
+    color: var(--color-red);
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 10px 0;
+  }
+  .lp-labels img {
+    width: 100px;
+  }
+
+  .lp-additional-component-div {
+    margin: auto;
+    margin-top: -45%;
+    margin-left: 85px;
+    width: 80%;
+    font-size: 14px;
+  }
+  .lp-additional-component-div p {
+    margin: 0;
+    margin-bottom: 93px;
+    font-size: 15px;
+  }
+  .lp-cta {
+    text-align: center;
+    background-color: var(--color-red);
+    color: white;
+    padding: 10px 25px;
+    max-width: max-content;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: -46px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .lp-hero-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+  }
+
+  .hero-banner {
+    margin-top: 0;
+  }
+
+  .lp-hero h1 {
+    text-align: left;
+  }
+  .lp-logo {
+    width: 25%;
+    margin: auto;
+    margin-left: 0;
+  }
+
+  .lp-hero p {
+    text-align: left;
+    margin: 0;
+  }
+  .arrows {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .arrows img {
+    width: 60px;
+  }
+
+  .lp-hero-text {
+    width: 80%;
+    margin: auto;
+  }
+
+  .lp-hero-bullets-div {
+    background-color: var(--color-red);
+    color: white;
+    padding: 10px 0;
+    margin-top: 40px;
+  }
+  .lp-hero-bullets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 90%;
+   }
+
+  .lp-hero ul li img {
+    width: 45px;
+  }
+  .lp-hero ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .lp-hero ul li p {
+    text-align: center;
+    font-size: 12px;
+    text-transform: none;
+    font-weight: 100;
+    font-family: "OpenSans-Regular";
+    margin-top: 15px;
+    width: 85%;
+
+  }
 
 
 
@@ -482,11 +705,4 @@ img {
 
 
 
-
-
-
-
-
-
-@media screen and (min-width: 2300px) {
 }
