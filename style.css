@@ -88,7 +88,7 @@ img {
 
 .lp-h3 {
   text-align: center;
-  font-size: 26px;
+  font-size: 30px;
   font-family: "AlethiaProMedium";
   font-weight: 500;
   width: 70%;
@@ -169,6 +169,7 @@ img {
 .lp-body-section div ul li b {
   display: block;
   text-transform: uppercase;
+  font-family: 'OpenSans-Medium';
 }
 .lp-body-section div ul li {
   margin-bottom: 20px;
@@ -258,7 +259,7 @@ img {
 .lp-why-text {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 80%;
+  width: 60%;
   margin: auto;
   text-align: center;
   justify-content: center;
@@ -483,7 +484,7 @@ img {
 }
 .lp-changes-div p {
   margin: 0;
-  font-size: 13px;
+  font-size: 16px;
   width: 80%;
 }
 .lp-changes-div p span {
@@ -492,7 +493,7 @@ img {
   display: block;
   color: var(--color-red);
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
   margin: 10px 0;
 }
@@ -504,7 +505,15 @@ img {
   margin-right: 8px;
 }
 
+.lp-labels img.desktop{  
+  display: none;
+}
+.lp-additional-component-div .lp-cta-div.desktop{
+  display: none;
+}
+
 @media screen and (min-width: 425px) {
+  
   .lp-additional-component-div p {
     margin: 0;
     margin-bottom: 42px;
@@ -617,6 +626,12 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .lp-labels img.desktop{  
+    display: block;
+  }
+  .lp-additional-component-div .lp-cta-div.desktop{
+    display: block;
+  }
   .mobile {
     display: none;
   }
@@ -953,7 +968,7 @@ img {
 
 @media screen and (min-width: 900px) {
   .lp-hero-text {
-    width: 70%;
+    width: 77%;
     margin-right: 0;
   }
 
@@ -1155,10 +1170,10 @@ img {
   }
 
   .lp-last-div p {
-    font-size: 32px;
+    font-size: 40px;
   }
   .lp-last-cta p {
-    font-size: 32px;
+    font-size: 40px;
     text-align: left;
     width: 95%;
     margin: auto;
@@ -1271,9 +1286,9 @@ img {
   }
 
   .lp-hero-text {
-    width: 46%;
+    width: 53%;
     margin-right: 36px;
-  }
+}
   .lp-hero h1 {
     font-size: 42px;
     margin-top: 40px;
